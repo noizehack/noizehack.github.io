@@ -1,1 +1,96 @@
-testing noizehack.com redirect to github pages
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trevor Baker - Music - Synth DIY - noizehack.com</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Trevor Baker's music and synth diy builds as well as information for booking and hiring">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#bookhire">booking &amp hiring</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container text-center">
+        <h1>Trevor Baker</h1>
+        <h3>Latest Track:</h3>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/261869845&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <p><a target="_blank" href="https://youtube.com/noizehack"><button type="button" class="btn btn-default"><i class="fa fa-youtube"></i> youtube</button></a> <a target="_blank" href="https://soundcloud.com/noizehack"><button type="button" class="btn btn-default"><i class="fa fa-soundcloud"></i> soundcloud</button></a> <a target="_blank" href="https://github.com/noizehack"><button type="button" class="btn btn-default"><i class="fa fa-github"></i> github</button></a> <a target="_blank" href="https://www.facebook.com/trevorbakersound"><button type="button" class="btn btn-default"><i class="fa fa-facebook"></i> facebook</button></a></p>
+      </div>
+      <div id="projects" class="container text-center">
+        <h2>Projects:</h2>
+        <img class="img-responsive" src="drumSeq.jpg" alt="raspberry pi launchpad drum sequencer">
+        <h3>launchpad pi drum sequencer</h3>
+        <p class="text-left">I built this to have a powerful drum sequencer that I could use with my modular synth without needing to use a computer. It does run on a Raspberry Pi, which is a small computer, but it does not have a screen or keyboard or mouse. The sequencer is written in node.js and it sends out trigger pulses and a clock as well as midi over USB. It uses a novation launchpad as the input device and display.</p>
+        <p><a target="_blank" href="https://youtu.be/riyU73oSkgA">video</a> - <a target="_blank" href="https://github.com/noizehack/Launchpad-Pi-Sequencer">github page with instructions and documentation to build your own</a></p>
+        <p>***</p>
+        <img class="img-responsive" src="nineVolt1.jpg" alt="DIY nine volt modular synth">
+        <h3>patchable nine volt synth box one</h3>
+        <p class="text-left">This was the first box of two that I built which was an attempt to build a modular synth powered by 9v guitar pedal power supplies. I used a style similar to Serge synths where each panel has multiple modules, but I used 1/4 inch jacks more similar to Moog style modulars. Using a single voltage supply rail also presented challenges as most modular synth designs are intended for positive and negative voltage rails.</p>
+        <p class="text-left">Modules:</p>
+        <ul class="text-left">
+          <li>four attack decay generators with looping and trigger as well as gate, so they can be used as LFOs in looping mode and ASR envelopes with gate inputs.</li>
+          <li>two 555 timer chip based VCOs with frequency and pulse width adjustments as well as two cv inputs and amplitude modulation and sync inputs.</li>
+          <li>two Voice of Saturn synths, these are dual oscillator 555 based synths with an LFO and cv control of each oscillator as well as a vactrol cv control of both oscillators together.</li>
+        </ul>
+        <p><a target="_blank" href="https://youtu.be/hV5lTY5r14Q">video</a></p>
+        <p>***</p>
+        <img class="img-responsive" src="nineVolt2.jpg" alt="DIY nine volt modular synth">
+        <h3>patchable nine volt synth box two</h3>
+        <p class="text-left">The second box of the 9v synth system.</p>
+        <p class="text-left">Modules:</p>
+        <ul class="text-left">
+          <li>four VCAs with output level adjustment</li>
+          <li>a four input passive mixer</li>
+          <li>two Q &amp D VCFs with switches to change between the self-oscillating version of the circuit and non self-oscillating versions</li>
+          <li>two 4049 inverter chip based VCFs with switching between band pass and low pass</li>
+          <li>four attenuverters with offset</li>
+        </ul>
+        <p>***</p>
+        <img class="img-responsive" src="droneFriend.jpg" alt="six oscillator drone synth">
+        <h3>drone friend six oscillator drone synth</h3>
+        <p class="text-left">This drone synth has six simple single transistor oscillators that each have a coarse and fine tune potentiometer. The output of the oscillators goes to the banana jacks in the middle row. The jacks on the top row are summed into the output and the bottom row is a gate input for each oscillator. Complex drone sounds as well as rythmic patches can be made with this synth.</p>
+        <p>***</p>
+        <img class="img-responsive" src="matrixMixer.jpg" alt="passive matrix mixer">
+        <h3>passive matrix mixer</h3>
+        <p class="text-left">A four input and four output passive matrix mixer with an extra output jack on the right for the right channel. The extra jack makes it easy to mix four feedback loops together and listen to the output of the fourth without needing a splitter box or Y cable. Matrix mixers can be used to make anything from calm drone sounds to chaotic noise walls with guitar pedals attached to them. They can also be used as a powerful mixer for routing effects in parallel and serial.</p>
+        <p><a target="_blank" href="https://youtu.be/Qw468qlDaAE">video</a></p>
+        <p>***</p>
+      </div>
+      <div id="bookhire" class="container text-center">
+        <h2>Booking:</h2>
+        <p>I am available for shows in the Los Angeles area on short notice. I am also available to play in San Francisco with slightly more notice. Let me know if you would like me to play outside of these areas. The email below is the best way to contact me.</p>
+        <h2>Hiring:</h2>
+        <p>You can hire me to build kits or custom synthesizers or help with design of hardware or software synths and sequencers. I am also available for sound design and production. The email below is the best way to get in touch with me.</p>
+      </div>
+      <div id="contact" class="container text-center">
+        <h2>Contact:</h2>
+        <p>Email: <a href="trevor.baker.sound@gmail.com">trevor.baker.sound@gmail.com</a><br>
+        Phone: 415 297 1258</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
